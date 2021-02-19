@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="../Images/Monsters-University-James-P-Sullivan-Icon-2_icon-icons.com_55700.ico"
+    />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <title>Log In | Timesheet</title>
+  </head>
+  <body>
+    <main>
+      <section class="login">
+        <div class="login-container">
+          <div class="form-title">
+            <h3>Sign in to your account</h3>
+          </div>
+          <form class="login-form" action="">
+            <input
+              class="username"
+              type="text"
+              placeholder="Username"
+              name="username"
+              required
+              autofocus
+              autocomplete="off"
+            />
+            <input
+              class="pass"
+              type="password"
+              name="password"
+              placeholder="Password"
+            />
+            <button class="submit" type="submit">Sign In</button>
+          </form>
+          <div class="flinks">
+            <a href="#" target="_blank" id="forgot">Forgot Password?</a>
+            <br />
+            <a href="#" id="notreg">Not Registered?</a>
+          </div>
+        </div>
+      </section>
+      <section class="family">
+        <div class="mtf">
+          <span>Meet our family</span>
+          <p>Make Pizza. Spread Love</p>
+        </div>
+        <div class="gallery">
+          <img class="mainimg" src="../Images Dominos/main.jpg" alt="" />
+          <img class="pic1" src="../Images Dominos/pic1.jpg" alt="" />
+          <img class="pic2" src="../Images Dominos/pic2.jpg" alt="" />
+          <img class="pic4" src="../Images Dominos/pic4.jpg" alt="" />
+        </div>
+      </section>
+    </main>
+    <div class="modal">
+      <div class="modal-content">
+        <h1 id="close">+</h1>
+        <h2>New Member? Register <br> below</h2>
+        <form action="">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            required
+            maxlength="40"
+            autofocus
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+            maxlength="40"
+          />
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Username"
+            required
+            maxlength="15"
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            required
+            maxlength="15"
+            minlength="6"
+          />
+          <br />
+          <button type="submit" class="submit">Register</button>
+        </form>
+        <a href="../HTML/index.html">Already Registered?</a>
+      </div>
+    </div>
+    <script>
+      //Not Registered a link
+      document.getElementById("notreg").addEventListener("click", function () {
+        document.querySelector(".modal").style.display = "flex";
+      });
+      //tab close button
+      document.getElementById("close").addEventListener("click", function () {
+        document.querySelector(".modal").style.display = "none";
+      });
+    </script>
+  </body>
+</html>
